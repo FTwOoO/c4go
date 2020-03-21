@@ -98,6 +98,8 @@ func Parse(fullline string) (returnNode Node, err error) {
 		return parseCaseStmt(line), nil
 	case "CharacterLiteral":
 		return parseCharacterLiteral(line), nil
+	case "ColdAttr":
+		return parseColdAttr(line), nil
 	case "CompoundLiteralExpr":
 		return parseCompoundLiteralExpr(line), nil
 	case "CompoundStmt":
