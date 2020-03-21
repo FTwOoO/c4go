@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/Konstantin8105/c4go/util"
+	"github.com/FTwOoO/c4go/util"
 )
 
 // DefinitionFunction contains the prototype definition for a function.
@@ -49,7 +49,7 @@ type DefinitionFunction struct {
 // only on Mac) with a specific substitution provided. This means that it should
 // replace any instance of __builtin_fabs with:
 //
-//     github.com/Konstantin8105/c4go/noarch.Fabs
+//     github.com/FTwOoO/c4go/noarch.Fabs
 //
 // The substitution is optional.
 //
@@ -450,7 +450,7 @@ func (p *Program) loadFunctionDefinitions() {
 			}
 
 			if strings.HasPrefix(substitution, "noarch.") {
-				substitution = "github.com/Konstantin8105/c4go/" + substitution
+				substitution = "github.com/FTwOoO/c4go/" + substitution
 			}
 
 			p.AddFunctionDefinition(DefinitionFunction{

@@ -10,10 +10,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/Konstantin8105/c4go/ast"
-	"github.com/Konstantin8105/c4go/program"
-	"github.com/Konstantin8105/c4go/types"
-	"github.com/Konstantin8105/c4go/util"
+	"github.com/FTwOoO/c4go/ast"
+	"github.com/FTwOoO/c4go/program"
+	"github.com/FTwOoO/c4go/types"
+	"github.com/FTwOoO/c4go/util"
 )
 
 // Example of AST for union without name inside struct:
@@ -85,7 +85,7 @@ func transpileFieldDecl(p *program.Program, n *ast.FieldDecl) (
 	p.AddMessage(p.GenerateWarningMessage(err, n))
 
 	// TODO: The name of a variable or field cannot be a reserved word
-	// https://github.com/Konstantin8105/c4go/issues/83
+	// https://github.com/FTwOoO/c4go/issues/83
 	// Search for this issue in other areas of the codebase.
 	if util.IsGoKeyword(name) {
 		name += "_"

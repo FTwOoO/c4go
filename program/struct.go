@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/Konstantin8105/c4go/ast"
+	"github.com/FTwOoO/c4go/ast"
 )
 
 type TypeOfStruct int

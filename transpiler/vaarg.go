@@ -6,10 +6,10 @@ import (
 	"go/token"
 	"strings"
 
-	"github.com/Konstantin8105/c4go/ast"
-	"github.com/Konstantin8105/c4go/program"
-	"github.com/Konstantin8105/c4go/types"
-	"github.com/Konstantin8105/c4go/util"
+	"github.com/FTwOoO/c4go/ast"
+	"github.com/FTwOoO/c4go/program"
+	"github.com/FTwOoO/c4go/types"
+	"github.com/FTwOoO/c4go/util"
 )
 
 func transpileVAArgExpr(n *ast.VAArgExpr, p *program.Program) (

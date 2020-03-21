@@ -1,4 +1,4 @@
-module github.com/Konstantin8105/c4go
+module github.com/FTwOoO/c4go
 
 require (
 	github.com/Konstantin8105/cs v0.0.0-20190517091010-c069cc1cee1b

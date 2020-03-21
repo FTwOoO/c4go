@@ -13,9 +13,9 @@ import (
 
 	"strings"
 
-	"github.com/Konstantin8105/c4go/ast"
-	"github.com/Konstantin8105/c4go/preprocessor"
-	"github.com/Konstantin8105/c4go/util"
+	"github.com/FTwOoO/c4go/ast"
+	"github.com/FTwOoO/c4go/preprocessor"
+	"github.com/FTwOoO/c4go/util"
 )
 
 // StructRegistry is a map of Struct for struct types and union type
@@ -418,7 +418,7 @@ func (p *Program) String() string {
 //	Package - transpiled by c4go
 //
 //	If you have found any issues, please raise an issue at:
-//	https://github.com/Konstantin8105/c4go/
+//	https://github.com/FTwOoO/c4go/
 //
 
 `))

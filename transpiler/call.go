@@ -11,10 +11,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/Konstantin8105/c4go/ast"
-	"github.com/Konstantin8105/c4go/program"
-	"github.com/Konstantin8105/c4go/types"
-	"github.com/Konstantin8105/c4go/util"
+	"github.com/FTwOoO/c4go/ast"
+	"github.com/FTwOoO/c4go/program"
+	"github.com/FTwOoO/c4go/types"
+	"github.com/FTwOoO/c4go/util"
 )
 
 func getMemberName(firstChild ast.Node) (name string, ok bool) {
@@ -971,7 +971,7 @@ func transpileCallExprBsearch(n *ast.CallExpr, p *program.Program) (
 		},
 	}
 
-	p.AddImport("github.com/Konstantin8105/c4go/noarch")
+	p.AddImport("github.com/FTwOoO/c4go/noarch")
 
 	return util.NewCallExpr("noarch.BSearch",
 		// sort.Search expecting a "int" type

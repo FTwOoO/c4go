@@ -69,7 +69,7 @@ int main()
     plan(44);
 
     diag("TODO: __builtin_object_size");
-    // https://github.com/Konstantin8105/c4go/issues/359
+    // https://github.com/FTwOoO/c4go/issues/359
 
     {
         diag("strcpy");

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/Konstantin8105/c4go/program"
+	"github.com/FTwOoO/c4go/program"
 )
 
 func TestResolveTypeForBinaryOperator(t *testing.T) {

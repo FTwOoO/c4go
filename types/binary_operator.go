@@ -1,7 +1,7 @@
 package types
 
 import (
-	"github.com/Konstantin8105/c4go/program"
+	"github.com/FTwOoO/c4go/program"
 )
 
 // ResolveTypeForBinaryOperator determines the result Go type when performing a

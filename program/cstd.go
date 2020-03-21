@@ -144,7 +144,7 @@ func memcpy(dst, src interface{}, size uint32) interface{} {
 //---
 // __assert_fail from assert.h
 // c function : bool __assert_fail(const char*, const char*, unsigned int, const char*)
-// dep pkg    : fmt os github.com/Konstantin8105/c4go/noarch
+// dep pkg    : fmt os github.com/FTwOoO/c4go/noarch
 // dep func   :
 func __assert_fail(
 	expression, filePath []byte,

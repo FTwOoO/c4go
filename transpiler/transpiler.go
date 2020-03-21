@@ -11,10 +11,10 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/Konstantin8105/c4go/ast"
-	"github.com/Konstantin8105/c4go/program"
-	"github.com/Konstantin8105/c4go/types"
-	"github.com/Konstantin8105/c4go/util"
+	"github.com/FTwOoO/c4go/ast"
+	"github.com/FTwOoO/c4go/program"
+	"github.com/FTwOoO/c4go/types"
+	"github.com/FTwOoO/c4go/util"
 )
 
 var AddOutsideStruct bool
@@ -425,7 +425,7 @@ func transpileToStmt(node ast.Node, p *program.Program) (
 
 	case *ast.GCCAsmStmt:
 		// Go does not support inline assembly. See:
-		// https://github.com/Konstantin8105/c4go/issues/228
+		// https://github.com/FTwOoO/c4go/issues/228
 		p.AddMessage(p.GenerateWarningMessage(
 			errors.New("cannot transpile asm, will be ignored"), n))
 

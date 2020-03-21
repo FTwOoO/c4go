@@ -13,7 +13,7 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"github.com/Konstantin8105/c4go/util"
+	"github.com/FTwOoO/c4go/util"
 )
 
 // One simple part of preprocessor code
@@ -642,7 +642,7 @@ func getIncludeList(inputFiles, clangFlags []string, flag []string, cppCode bool
 	// remove warnings
 	// ... /usr/lib/llvm-4.0/bin/../lib/clang/4.0.1/include/stddef.h
 	// .. /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
-	// /home/konstantin/go/src/github.com/Konstantin8105/c4go/testdata/kilo/debug.kilo.c:81:9: warning: '_BSD_SOURCE' macro redefined [-Wmacro-redefined]
+	// /home/konstantin/go/src/github.com/FTwOoO/c4go/testdata/kilo/debug.kilo.c:81:9: warning: '_BSD_SOURCE' macro redefined [-Wmacro-redefined]
 	// #define _BSD_SOURCE
 	//         ^
 	// /usr/include/features.h:188:10: note: previous definition is here

@@ -1,8 +1,8 @@
 [![Build Status](https://travis-ci.org/Konstantin8105/c4go.svg?branch=master)](https://travis-ci.org/Konstantin8105/c4go)
-[![Go Report Card](https://goreportcard.com/badge/github.com/Konstantin8105/c4go)](https://goreportcard.com/report/github.com/Konstantin8105/c4go)
+[![Go Report Card](https://goreportcard.com/badge/github.com/FTwOoO/c4go)](https://goreportcard.com/report/github.com/FTwOoO/c4go)
 [![codecov](https://codecov.io/gh/Konstantin8105/c4go/branch/master/graph/badge.svg)](https://codecov.io/gh/Konstantin8105/c4go)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/Konstantin8105/c4go/master/LICENSE)
-[![GoDoc](https://godoc.org/github.com/Konstantin8105/c4go?status.svg)](https://godoc.org/github.com/Konstantin8105/c4go)
+[![GoDoc](https://godoc.org/github.com/FTwOoO/c4go?status.svg)](https://godoc.org/github.com/FTwOoO/c4go)
 
 A tool for [transpiling](https://en.wikipedia.org/wiki/Source-to-source_compiler) C code to Go code.
 
@@ -23,10 +23,10 @@ Installation with version generation.
 
 ```bash
 # get code
-go get -u github.com/Konstantin8105/c4go
+go get -u github.com/FTwOoO/c4go
 
 # move to project source
-cd $GOPATH/src/github.com/Konstantin8105/c4go
+cd $GOPATH/src/github.com/FTwOoO/c4go
 
 # generate version
 go generate ./...
@@ -43,7 +43,7 @@ c4go version
 
 ```bash
 # Change your location to the folder with examples:
-cd $GOPATH/src/github.com/Konstantin8105/c4go/examples/
+cd $GOPATH/src/github.com/FTwOoO/c4go/examples/
 
 # Transpile one file from the C example folder:
 c4go transpile prime.c
@@ -95,13 +95,13 @@ Go code of file `prime.go`:
 //	Package - transpiled by c4go
 //
 //	If you have found any issues, please raise an issue at:
-//	https://github.com/Konstantin8105/c4go/
+//	https://github.com/FTwOoO/c4go/
 //
 
 package main
 
 import "unsafe"
-import "github.com/Konstantin8105/c4go/noarch"
+import "github.com/FTwOoO/c4go/noarch"
 import "fmt"
 
 // main - transpiled function from  C4GO/examples/prime.c:3
@@ -161,7 +161,7 @@ int main()
 //	Package - transpiled by c4go
 //
 //	If you have found any issues, please raise an issue at:
-//	https://github.com/Konstantin8105/c4go/
+//	https://github.com/FTwOoO/c4go/
 //
 
 package main
@@ -169,7 +169,7 @@ package main
 // #include </usr/include/math.h>
 import "C"
 
-import "github.com/Konstantin8105/c4go/noarch"
+import "github.com/FTwOoO/c4go/noarch"
 import "unsafe"
 
 // main - transpiled function from  C4GO/examples/math.c:4
@@ -246,13 +246,13 @@ int main()
 //	Package - transpiled by c4go
 //
 //	If you have found any issues, please raise an issue at:
-//	https://github.com/Konstantin8105/c4go/
+//	https://github.com/FTwOoO/c4go/
 //
 
 package main
 
 import "unsafe"
-import "github.com/Konstantin8105/c4go/noarch"
+import "github.com/FTwOoO/c4go/noarch"
 
 // a - transpiled function from  C4GO/examples/ap.c:4
 func a(v1 []int32) {
@@ -394,13 +394,13 @@ static int linecount(char *s)
 
 goroutine 1 [running]:
 main.generateAstLines(0x1, 0x0, 0xc000010140, 0x10, 0x10, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
-	/go/src/github.com/Konstantin8105/c4go/main.go:438 +0xd40
+	/go/src/github.com/FTwOoO/c4go/main.go:438 +0xd40
 main.Start(0x1, 0x0, 0xc000010140, 0x10, 0x10, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
-	/go/src/github.com/Konstantin8105/c4go/main.go:356 +0xa9
+	/go/src/github.com/FTwOoO/c4go/main.go:356 +0xa9
 main.runCommand(0x0)
-	/go/src/github.com/Konstantin8105/c4go/main.go:723 +0xa45
+	/go/src/github.com/FTwOoO/c4go/main.go:723 +0xa45
 main.main()
-	/go/src/github.com/Konstantin8105/c4go/main.go:556 +0x22
+	/go/src/github.com/FTwOoO/c4go/main.go:556 +0x22
 ```
 That error is good and enought information for next step of transpilation.
 Let's clarify one of them - we see 2 function with same function name and
@@ -496,7 +496,7 @@ go test -tags=integration ./...
 ```
 
 Integration tests in the form of complete C programs that can be found in the
-[tests](https://github.com/Konstantin8105/c4go/tree/master/tests) directory.
+[tests](https://github.com/FTwOoO/c4go/tree/master/tests) directory.
 
 Integration tests work like this:
 
@@ -525,7 +525,7 @@ Result looks for example:
 ```
 goos: linux
 goarch: amd64
-pkg: github.com/Konstantin8105/c4go
+pkg: github.com/FTwOoO/c4go
 BenchmarkTranspile/Full-6         	       5	 274922964 ns/op	43046865 B/op	  379676 allocs/op
 BenchmarkTranspile/GoCode-6       	      20	  86806808 ns/op	36577533 B/op	  308060 allocs/op
 PASS

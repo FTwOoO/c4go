@@ -3,23 +3,23 @@ package program
 // DefinitionVariable is map of conversion from C var to C4go variable
 var DefinitionVariable = map[string]string{
 	// stdio.h
-	"stdin":  "github.com/Konstantin8105/c4go/noarch.Stdin",
-	"stdout": "github.com/Konstantin8105/c4go/noarch.Stdout",
-	"stderr": "github.com/Konstantin8105/c4go/noarch.Stderr",
+	"stdin":  "github.com/FTwOoO/c4go/noarch.Stdin",
+	"stdout": "github.com/FTwOoO/c4go/noarch.Stdout",
+	"stderr": "github.com/FTwOoO/c4go/noarch.Stderr",
 
 	// ctype.h
-	"_ISupper":  "github.com/Konstantin8105/c4go/noarch.ISupper",
-	"_ISlower":  "github.com/Konstantin8105/c4go/noarch.ISlower",
-	"_ISalpha":  "github.com/Konstantin8105/c4go/noarch.ISalpha",
-	"_ISdigit":  "github.com/Konstantin8105/c4go/noarch.ISdigit",
-	"_ISxdigit": "github.com/Konstantin8105/c4go/noarch.ISxdigit",
-	"_ISspace":  "github.com/Konstantin8105/c4go/noarch.ISspace",
-	"_ISprint":  "github.com/Konstantin8105/c4go/noarch.ISprint",
-	"_ISgraph":  "github.com/Konstantin8105/c4go/noarch.ISgraph",
-	"_ISblank":  "github.com/Konstantin8105/c4go/noarch.ISblank",
-	"_IScntrl":  "github.com/Konstantin8105/c4go/noarch.IScntrl",
-	"_ISpunct":  "github.com/Konstantin8105/c4go/noarch.ISpunct",
-	"_ISalnum":  "github.com/Konstantin8105/c4go/noarch.ISalnum",
+	"_ISupper":  "github.com/FTwOoO/c4go/noarch.ISupper",
+	"_ISlower":  "github.com/FTwOoO/c4go/noarch.ISlower",
+	"_ISalpha":  "github.com/FTwOoO/c4go/noarch.ISalpha",
+	"_ISdigit":  "github.com/FTwOoO/c4go/noarch.ISdigit",
+	"_ISxdigit": "github.com/FTwOoO/c4go/noarch.ISxdigit",
+	"_ISspace":  "github.com/FTwOoO/c4go/noarch.ISspace",
+	"_ISprint":  "github.com/FTwOoO/c4go/noarch.ISprint",
+	"_ISgraph":  "github.com/FTwOoO/c4go/noarch.ISgraph",
+	"_ISblank":  "github.com/FTwOoO/c4go/noarch.ISblank",
+	"_IScntrl":  "github.com/FTwOoO/c4go/noarch.IScntrl",
+	"_ISpunct":  "github.com/FTwOoO/c4go/noarch.ISpunct",
+	"_ISalnum":  "github.com/FTwOoO/c4go/noarch.ISalnum",
 
 	// termios.h
 	"TCSANOW":   "github.com/pkg/term/termios.TCSANOW",

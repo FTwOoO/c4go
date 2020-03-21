@@ -3,7 +3,7 @@ package ast
 import (
 	"testing"
 
-	"github.com/Konstantin8105/c4go/preprocessor"
+	"github.com/FTwOoO/c4go/preprocessor"
 )
 
 func TestFloatingLiteral(t *testing.T) {

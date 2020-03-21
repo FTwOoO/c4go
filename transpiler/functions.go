@@ -9,10 +9,10 @@ import (
 	"os"
 	"strings"
 
-	"github.com/Konstantin8105/c4go/ast"
-	"github.com/Konstantin8105/c4go/program"
-	"github.com/Konstantin8105/c4go/types"
-	"github.com/Konstantin8105/c4go/util"
+	"github.com/FTwOoO/c4go/ast"
+	"github.com/FTwOoO/c4go/program"
+	"github.com/FTwOoO/c4go/types"
+	"github.com/FTwOoO/c4go/util"
 
 	goast "go/ast"
 	"go/token"
@@ -126,7 +126,7 @@ func transpileFunctionDecl(n *ast.FunctionDecl, p *program.Program) (
 		body.List = append([]goast.Stmt{&goast.DeferStmt{
 			Call: util.NewCallExpr("noarch.AtexitRun"),
 		}}, body.List...)
-		p.AddImport("github.com/Konstantin8105/c4go/noarch")
+		p.AddImport("github.com/FTwOoO/c4go/noarch")
 	}
 
 	if functionBody != nil {
@@ -331,7 +331,7 @@ func transpileReturnStmt(n *ast.ReturnStmt, p *program.Program) (
 	if p.Function != nil && p.Function.Name == "main" {
 		litExpr, isLiteral := e.(*goast.BasicLit)
 		if !isLiteral || (isLiteral && litExpr.Value != "0") {
-			p.AddImport("github.com/Konstantin8105/c4go/noarch")
+			p.AddImport("github.com/FTwOoO/c4go/noarch")
 			return util.NewExprStmt(&goast.CallExpr{
 				Fun: goast.NewIdent("noarch.Exit"),
 				Args: []goast.Expr{

@@ -10,9 +10,9 @@ import (
 
 	goast "go/ast"
 
-	"github.com/Konstantin8105/c4go/ast"
-	"github.com/Konstantin8105/c4go/program"
-	"github.com/Konstantin8105/c4go/util"
+	"github.com/FTwOoO/c4go/ast"
+	"github.com/FTwOoO/c4go/program"
+	"github.com/FTwOoO/c4go/util"
 )
 
 func transpileEnumConstantDecl(p *program.Program, n *ast.EnumConstantDecl) (

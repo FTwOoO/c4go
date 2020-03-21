@@ -9,7 +9,7 @@ import (
 	goast "go/ast"
 	"go/token"
 
-	"github.com/Konstantin8105/c4go/ast"
+	"github.com/FTwOoO/c4go/ast"
 )
 
 var chartests = []struct {

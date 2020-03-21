@@ -2,7 +2,7 @@
 //
 // Installation
 //
-//     go get -u github.com/Konstantin8105/c4go
+//     go get -u github.com/FTwOoO/c4go
 //
 // Usage
 //
@@ -25,11 +25,11 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/Konstantin8105/c4go/ast"
-	"github.com/Konstantin8105/c4go/preprocessor"
-	"github.com/Konstantin8105/c4go/program"
-	"github.com/Konstantin8105/c4go/transpiler"
-	"github.com/Konstantin8105/c4go/version"
+	"github.com/FTwOoO/c4go/ast"
+	"github.com/FTwOoO/c4go/preprocessor"
+	"github.com/FTwOoO/c4go/program"
+	"github.com/FTwOoO/c4go/transpiler"
+	"github.com/FTwOoO/c4go/version"
 )
 
 var stderr io.Writer = os.Stderr
@@ -40,7 +40,7 @@ var astout io.Writer = os.Stdout
 // you need only set the options you need.
 //
 // TODO: Better separation on CLI modes
-// https://github.com/Konstantin8105/c4go/issues/134
+// https://github.com/FTwOoO/c4go/issues/134
 //
 // Do not instantiate this directly. Instead use DefaultProgramArgs(); then
 // modify any specific attributes.

@@ -12,7 +12,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Konstantin8105/c4go/util"
+	"github.com/FTwOoO/c4go/util"
 )
 
 func formatMultiLine(o interface{}) string {

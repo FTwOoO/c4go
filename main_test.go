@@ -21,8 +21,8 @@ import (
 	"syscall"
 	"testing"
 
-	"github.com/Konstantin8105/c4go/preprocessor"
-	"github.com/Konstantin8105/c4go/util"
+	"github.com/FTwOoO/c4go/preprocessor"
+	"github.com/FTwOoO/c4go/util"
 	"github.com/Konstantin8105/cs"
 )
 
@@ -68,7 +68,7 @@ func TestIntegrationScripts(t *testing.T) {
 	)
 
 	// Parallel is not acceptable, before solving issue:
-	// https://github.com/Konstantin8105/c4go/issues/376
+	// https://github.com/FTwOoO/c4go/issues/376
 	// t.Parallel()
 
 	for _, file := range files {
@@ -352,17 +352,17 @@ func TestApp(t *testing.T) {
 	// Example:
 	//
 	// go test -coverprofile=ctype.coverprofile                   \
-	// -coverpkg=github.com/Konstantin8105/c4go/noarch,           \
-	//           github.com/Konstantin8105/c4go/linux,            \
-	//           github.com/Konstantin8105/c4go/build/tests/ctype \
-	// github.com/Konstantin8105/c4go/build/tests/ctype -args -test.v -- some args
+	// -coverpkg=github.com/FTwOoO/c4go/noarch,           \
+	//           github.com/FTwOoO/c4go/linux,            \
+	//           github.com/FTwOoO/c4go/build/tests/ctype \
+	// github.com/FTwOoO/c4go/build/tests/ctype -args -test.v -- some args
 	//
 	coverArgs := []string{
 		"test",
 		"-v",
 		fmt.Sprintf("-coverprofile=./testdata/%s.coverprofile", strings.Replace(subFolder, "/", "_", -1)),
-		fmt.Sprintf("-coverpkg=github.com/Konstantin8105/c4go/noarch,github.com/Konstantin8105/c4go/linux,github.com/Konstantin8105/c4go/%s", subFolder),
-		fmt.Sprintf("github.com/Konstantin8105/c4go/%s", subFolder),
+		fmt.Sprintf("-coverpkg=github.com/FTwOoO/c4go/noarch,github.com/FTwOoO/c4go/linux,github.com/FTwOoO/c4go/%s", subFolder),
+		fmt.Sprintf("github.com/FTwOoO/c4go/%s", subFolder),
 	}
 	if os.Getenv("TRAVIS") != "true" { // for local testing
 		coverArgs = append(coverArgs, "-args", "-test.v")
@@ -660,7 +660,7 @@ func TestCodeQuality(t *testing.T) {
 	}
 
 	// Parallel is not acceptable, before solving issue:
-	// https://github.com/Konstantin8105/c4go/issues/376
+	// https://github.com/FTwOoO/c4go/issues/376
 	// t.Parallel()
 
 	suffix := ".go.expected"

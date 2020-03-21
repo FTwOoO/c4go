@@ -34,8 +34,8 @@ func TestParseIncludeList(t *testing.T) {
 		},
 		{
 			inputLine: ` main.o: \
-  /home/lepricon/go/src/github.com/Konstantin8105/c4go/build/git-source/VasielBook/Глава\ 6/6.2/main.c`,
-			list: []string{"/home/lepricon/go/src/github.com/Konstantin8105/c4go/build/git-source/VasielBook/Глава 6/6.2/main.c"},
+  /home/lepricon/go/src/github.com/FTwOoO/c4go/build/git-source/VasielBook/Глава\ 6/6.2/main.c`,
+			list: []string{"/home/lepricon/go/src/github.com/FTwOoO/c4go/build/git-source/VasielBook/Глава 6/6.2/main.c"},
 		},
 		{
 			inputLine: ` shell.o: /tmp/SQLITE/sqlite-amalgamation-3220000/shell.c \

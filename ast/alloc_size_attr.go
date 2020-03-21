@@ -3,7 +3,7 @@ package ast
 import (
 	"strings"
 
-	"github.com/Konstantin8105/c4go/util"
+	"github.com/FTwOoO/c4go/util"
 )
 
 // AllocSizeAttr is a type of attribute that is optionally attached to a variable

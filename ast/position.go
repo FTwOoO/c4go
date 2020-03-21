@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/Konstantin8105/c4go/util"
+	"github.com/FTwOoO/c4go/util"
 )
 
 // Position is type of position in source code

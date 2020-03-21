@@ -68,7 +68,7 @@ func Fopen(filePath, mode []byte) *File {
 	sFilePath := CStringToString(filePath)
 
 	// TODO: Only some modes are supported by fopen()
-	// https://github.com/Konstantin8105/c4go/issues/89
+	// https://github.com/FTwOoO/c4go/issues/89
 	switch CStringToString(mode) {
 	case "r":
 		file, err = os.OpenFile(sFilePath, os.O_RDONLY, 0655)
@@ -226,7 +226,7 @@ func Fgets(str []byte, num32 int32, stream *File) []byte {
 	}
 
 	// TODO: Allow arguments to be passed by reference.
-	// https://github.com/Konstantin8105/c4go/issues/90
+	// https://github.com/FTwOoO/c4go/issues/90
 	// This appears in multiple locations.
 
 	// Be careful to crop the buffer to the real number of bytes read.
@@ -329,7 +329,7 @@ func NewFile(f *os.File) *File {
 // program shall call remove to delete this file once closed.
 func Tmpnam(str []byte) []byte {
 	// TODO: Allow arguments to be passed by reference.
-	// https://github.com/Konstantin8105/c4go/issues/90
+	// https://github.com/FTwOoO/c4go/issues/90
 	// This appears in multiple locations.
 
 	// TODO: There must be a better way of doing this. This way allows the same

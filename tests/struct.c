@@ -1106,7 +1106,7 @@ int main()
     }
 
     // uncomment after success implementation of struct scope
-    // https://github.com/Konstantin8105/c4go/issues/368
+    // https://github.com/FTwOoO/c4go/issues/368
     /*
 	diag("Typedef struct name from Go keyword")
 	{ typedef struct {int i;} chan        ;	chan        UU; UU.i = 5; is_eq(UU.i,5);}

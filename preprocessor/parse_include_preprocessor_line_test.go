@@ -53,9 +53,9 @@ func TestParseIncludePreproccessorLine(t *testing.T) {
 			},
 		},
 		{
-			inputLine: `# 3 "/home/lepricon/go/src/github.com/Konstantin8105/c4go/build/git-source/VasielBook/\320\223\320\273\320\260\320\262\320\260 6/6.2/main.c" 2`,
+			inputLine: `# 3 "/home/lepricon/go/src/github.com/FTwOoO/c4go/build/git-source/VasielBook/\320\223\320\273\320\260\320\262\320\260 6/6.2/main.c" 2`,
 			out: entity{
-				include:          `/home/lepricon/go/src/github.com/Konstantin8105/c4go/build/git-source/VasielBook/\320\223\320\273\320\260\320\262\320\260 6/6.2/main.c`,
+				include:          `/home/lepricon/go/src/github.com/FTwOoO/c4go/build/git-source/VasielBook/\320\223\320\273\320\260\320\262\320\260 6/6.2/main.c`,
 				positionInSource: 3,
 			},
 		},

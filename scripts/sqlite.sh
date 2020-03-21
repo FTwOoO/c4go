@@ -8,7 +8,7 @@ go build
 
 mkdir -p ./testdata/
 
-export C4GO_DIR=$GOPATH/src/github.com/Konstantin8105/c4go
+export C4GO_DIR=$GOPATH/src/github.com/FTwOoO/c4go
 export C4GO=$C4GO_DIR/c4go
 
 # This will have to be updated every so often to the latest version. You can

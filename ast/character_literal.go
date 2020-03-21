@@ -1,7 +1,7 @@
 package ast
 
 import (
-	"github.com/Konstantin8105/c4go/util"
+	"github.com/FTwOoO/c4go/util"
 )
 
 // CharacterLiteral is type of character literal

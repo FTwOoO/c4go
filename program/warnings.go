@@ -5,7 +5,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/Konstantin8105/c4go/ast"
+	"github.com/FTwOoO/c4go/ast"
 )
 
 var WarningMessage string = "// Warning "
@@ -27,7 +27,7 @@ func (p *Program) GenerateWarningMessage(e error, n ast.Node) string {
 func PathSimplification(message string) string {
 	if gopath := os.Getenv("GOPATH"); gopath != "" {
 		message = strings.Replace(message, gopath, "GOPATH", -1)
-		message = strings.Replace(message, "GOPATH/src/github.com/Konstantin8105/c4go", "C4GO", -1)
+		message = strings.Replace(message, "GOPATH/src/github.com/FTwOoO/c4go", "C4GO", -1)
 	}
 	return message
 }

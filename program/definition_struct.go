@@ -11,7 +11,7 @@ func (p *Program) initializationStructs() {
 		},
 	}
 	p.Structs["c4go_div_t"] = &Struct{
-		Name: "github.com/Konstantin8105/c4go/noarch.DivT",
+		Name: "github.com/FTwOoO/c4go/noarch.DivT",
 		Type: StructType,
 		Fields: map[string]interface{}{
 			"quot": "Quot",
@@ -29,7 +29,7 @@ func (p *Program) initializationStructs() {
 		},
 	}
 	p.Structs["c4go_ldiv_t"] = &Struct{
-		Name: "github.com/Konstantin8105/c4go/noarch.LdivT",
+		Name: "github.com/FTwOoO/c4go/noarch.LdivT",
 		Type: StructType,
 		Fields: map[string]interface{}{
 			"quot": "Quot",
@@ -47,7 +47,7 @@ func (p *Program) initializationStructs() {
 		},
 	}
 	p.Structs["c4go_lldiv_t"] = &Struct{
-		Name: "github.com/Konstantin8105/c4go/noarch.LldivT",
+		Name: "github.com/FTwOoO/c4go/noarch.LldivT",
 		Type: StructType,
 		Fields: map[string]interface{}{
 			"quot": "Quot",
@@ -65,7 +65,7 @@ func (p *Program) initializationStructs() {
 		},
 	}
 	p.Structs["c4go_struct lconv"] = &Struct{
-		Name: "github.com/Konstantin8105/c4go/noarch.Lconv",
+		Name: "github.com/FTwOoO/c4go/noarch.Lconv",
 		Type: StructType,
 		Fields: map[string]interface{}{
 			"currency_symbol": "Currency_symbol",
@@ -90,7 +90,7 @@ func (p *Program) initializationStructs() {
 		},
 	}
 	p.Structs["c4go_struct tm"] = &Struct{
-		Name: "github.com/Konstantin8105/c4go/noarch.Tm",
+		Name: "github.com/FTwOoO/c4go/noarch.Tm",
 		Type: StructType,
 		Fields: map[string]interface{}{
 			"tm_sec":   "TmSec",
@@ -115,7 +115,7 @@ func (p *Program) initializationStructs() {
 		},
 	}
 	p.Structs["c4go_struct itimerval"] = &Struct{
-		Name: "github.com/Konstantin8105/c4go/noarch.Itimeval",
+		Name: "github.com/FTwOoO/c4go/noarch.Itimeval",
 		Type: StructType,
 		Fields: map[string]interface{}{
 			"it_interval": "ItInterval",
@@ -133,7 +133,7 @@ func (p *Program) initializationStructs() {
 		},
 	}
 	p.Structs["c4go_struct timeval"] = &Struct{
-		Name: "github.com/Konstantin8105/c4go/noarch.Timeval",
+		Name: "github.com/FTwOoO/c4go/noarch.Timeval",
 		Type: StructType,
 		Fields: map[string]interface{}{
 			"tv_sec":  "TvSec",
@@ -151,7 +151,7 @@ func (p *Program) initializationStructs() {
 		},
 	}
 	p.Structs["c4go_struct timezone"] = &Struct{
-		Name: "github.com/Konstantin8105/c4go/noarch.Timezone",
+		Name: "github.com/FTwOoO/c4go/noarch.Timezone",
 		Type: StructType,
 		Fields: map[string]interface{}{
 			"tz_minuteswest": "TzMinuteswest",
@@ -172,7 +172,7 @@ func (p *Program) initializationStructs() {
 		},
 	}
 	p.Structs["c4go_struct termios"] = &Struct{
-		Name: "github.com/Konstantin8105/c4go/noarch.Termios",
+		Name: "github.com/FTwOoO/c4go/noarch.Termios",
 		Type: StructType,
 		Fields: map[string]interface{}{
 			"c_iflag": "Iflag",
@@ -207,7 +207,7 @@ func (p *Program) initializationStructs() {
 		},
 	}
 	p.Structs["c4go_struct rusage"] = &Struct{
-		Name: "github.com/Konstantin8105/c4go/noarch.Rusage",
+		Name: "github.com/FTwOoO/c4go/noarch.Rusage",
 		Type: StructType,
 		Fields: map[string]interface{}{
 			"ru_utime":    "Utime",
@@ -241,7 +241,7 @@ func (p *Program) initializationStructs() {
 		},
 	}
 	p.Structs["c4go_struct winsize"] = &Struct{
-		Name: "github.com/Konstantin8105/c4go/noarch.Winsize",
+		Name: "github.com/FTwOoO/c4go/noarch.Winsize",
 		Type: StructType,
 		Fields: map[string]interface{}{
 			"ws_row":    "Row",
@@ -264,7 +264,7 @@ func (p *Program) initializationStructs() {
 		},
 	}
 	p.Structs["c4go_struct flock"] = &Struct{
-		Name: "github.com/Konstantin8105/c4go/noarch.Flock",
+		Name: "github.com/FTwOoO/c4go/noarch.Flock",
 		Type: StructType,
 		Fields: map[string]interface{}{
 			"l_type":   "Type",

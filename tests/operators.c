@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 // TODO: More comprehensive operator tests
-// https://github.com/Konstantin8105/c4go/issues/143
+// https://github.com/FTwOoO/c4go/issues/143
 
 void empty() { ; }
 

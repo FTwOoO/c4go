@@ -17,7 +17,7 @@ import (
 	"sync/atomic"
 	"testing"
 
-	"github.com/Konstantin8105/c4go/program"
+	"github.com/FTwOoO/c4go/program"
 )
 
 func getFileList(prefix, gitSource string) (fileList []string, err error) {
@@ -262,7 +262,7 @@ func TestFrame3dd(t *testing.T) {
 
 		// clone git repository
 
-		args := []string{"clone", "-b", "Debug2", "https://github.com/Konstantin8105/History_frame3DD.git", folder}
+		args := []string{"clone", "-b", "Debug2", "https://github.com/FTwOoO/History_frame3DD.git", folder}
 		err = exec.Command("git", args...).Run()
 		if err != nil {
 			t.Fatalf("Cannot clone git repository with args `%v`: %v", args, err)

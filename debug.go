@@ -8,8 +8,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/Konstantin8105/c4go/ast"
-	"github.com/Konstantin8105/c4go/preprocessor"
+	"github.com/FTwOoO/c4go/ast"
+	"github.com/FTwOoO/c4go/preprocessor"
 )
 
 type Positioner interface {

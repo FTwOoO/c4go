@@ -2,7 +2,7 @@
 //	Package - transpiled by c4go
 //
 //	If you have found any issues, please raise an issue at:
-//	https://github.com/Konstantin8105/c4go/
+//	https://github.com/FTwOoO/c4go/
 //
 
 package code_quality
@@ -10,7 +10,7 @@ package code_quality
 import "reflect"
 import "runtime"
 import "unsafe"
-import "github.com/Konstantin8105/c4go/noarch"
+import "github.com/FTwOoO/c4go/noarch"
 
 // a - transpiled function from  C4GO/tests/code_quality/ap.c:4
 func a(v1 []int32) {

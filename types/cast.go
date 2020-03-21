@@ -9,8 +9,8 @@ import (
 
 	"strconv"
 
-	"github.com/Konstantin8105/c4go/program"
-	"github.com/Konstantin8105/c4go/util"
+	"github.com/FTwOoO/c4go/program"
+	"github.com/FTwOoO/c4go/util"
 )
 
 // GetArrayTypeAndSize returns the size and type of a fixed array. If the type
@@ -362,7 +362,7 @@ func CastExpr(p *program.Program, expr goast.Expr, cFromType, cToType string) (
 		}
 		if fromType == "bool" && toType == v {
 			expr = util.NewCallExpr("noarch.BoolToInt", expr)
-			p.AddImport("github.com/Konstantin8105/c4go/noarch")
+			p.AddImport("github.com/FTwOoO/c4go/noarch")
 			return CastExpr(p, expr, "int", cToType)
 		}
 	}
@@ -467,7 +467,7 @@ func CastExpr(p *program.Program, expr goast.Expr, cFromType, cToType string) (
 		return util.NewCallExpr(toType, expr), nil
 	}
 
-	p.AddImport("github.com/Konstantin8105/c4go/noarch")
+	p.AddImport("github.com/FTwOoO/c4go/noarch")
 
 	leftName := fromType
 	rightName := toType

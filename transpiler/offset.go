@@ -5,9 +5,9 @@ import (
 	"fmt"
 	goast "go/ast"
 
-	"github.com/Konstantin8105/c4go/ast"
-	"github.com/Konstantin8105/c4go/program"
-	"github.com/Konstantin8105/c4go/util"
+	"github.com/FTwOoO/c4go/ast"
+	"github.com/FTwOoO/c4go/program"
+	"github.com/FTwOoO/c4go/util"
 )
 
 func transpileOffsetOfExpr(n *ast.OffsetOfExpr, p *program.Program) (

@@ -4,16 +4,16 @@ package program
 // c4go structures
 var DefinitionType = map[string]string{
 	// time.h
-	"time_t": "github.com/Konstantin8105/c4go/noarch.TimeT",
-	"github.com/Konstantin8105/c4go/noarch.TimeT": "int32",
+	"time_t": "github.com/FTwOoO/c4go/noarch.TimeT",
+	"github.com/FTwOoO/c4go/noarch.TimeT": "int32",
 	"__time_t":      "int32",
 	"__suseconds_t": "int32",
 
 	"fpos_t": "int32",
 
 	// unistd.h
-	"ssize_t": "github.com/Konstantin8105/c4go/noarch.SsizeT",
-	"github.com/Konstantin8105/c4go/noarch.SsizeT": "long int",
+	"ssize_t": "github.com/FTwOoO/c4go/noarch.SsizeT",
+	"github.com/FTwOoO/c4go/noarch.SsizeT": "long int",
 
 	// built-in
 	"bool":                   "bool",
@@ -41,10 +41,10 @@ var DefinitionType = map[string]string{
 	"void":                   "",
 	"_Bool":                  "int32",
 	"size_t":                 "uint32",
-	"ptrdiff_t":              "github.com/Konstantin8105/c4go/noarch.PtrdiffT",
-	"github.com/Konstantin8105/c4go/noarch.PtrdiffT": "uint64",
-	"wchar_t": "github.com/Konstantin8105/c4go/noarch.WcharT",
-	"github.com/Konstantin8105/c4go/noarch.WcharT": "rune",
+	"ptrdiff_t":              "github.com/FTwOoO/c4go/noarch.PtrdiffT",
+	"github.com/FTwOoO/c4go/noarch.PtrdiffT": "uint64",
+	"wchar_t": "github.com/FTwOoO/c4go/noarch.WcharT",
+	"github.com/FTwOoO/c4go/noarch.WcharT": "rune",
 
 	// void*
 	"void*":  "interface{}",
@@ -58,7 +58,7 @@ var DefinitionType = map[string]string{
 	"mode_t":   "uint16",
 	"__mode_t": "uint16",
 
-	"FILE": "github.com/Konstantin8105/c4go/noarch.File",
+	"FILE": "github.com/FTwOoO/c4go/noarch.File",
 
 	// termios.h
 	"tcflag_t": "uint32",
@@ -69,8 +69,8 @@ var DefinitionType = map[string]string{
 	"__rusage_who_t": "int",
 
 	// time.h
-	"clock_t": "github.com/Konstantin8105/c4go/noarch.ClockT",
-	"github.com/Konstantin8105/c4go/noarch.ClockT": "int64",
+	"clock_t": "github.com/FTwOoO/c4go/noarch.ClockT",
+	"github.com/FTwOoO/c4go/noarch.ClockT": "int64",
 
 	// signal.h
 	"sig_atomic_t": "int64",

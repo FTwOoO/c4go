@@ -6,8 +6,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/Konstantin8105/c4go/program"
-	"github.com/Konstantin8105/c4go/util"
+	"github.com/FTwOoO/c4go/program"
+	"github.com/FTwOoO/c4go/util"
 )
 
 // cIntegerType - slice of C integer type
@@ -188,14 +188,14 @@ func ResolveType(p *program.Program, s string) (resolveResult string, err error)
 	// No need resolve typedef types
 	if _, ok := p.TypedefType[s]; ok {
 		if tt, ok := program.DefinitionType[s]; ok {
-			// "div_t":   "github.com/Konstantin8105/c4go/noarch.DivT",
+			// "div_t":   "github.com/FTwOoO/c4go/noarch.DivT",
 			ii := p.ImportType(tt)
 			return ii, nil
 		}
 		return s, nil
 	}
 	if tt, ok := program.DefinitionType[s]; ok {
-		// "div_t":   "github.com/Konstantin8105/c4go/noarch.DivT",
+		// "div_t":   "github.com/FTwOoO/c4go/noarch.DivT",
 		ii := p.ImportType(tt)
 		return ii, nil
 	}
