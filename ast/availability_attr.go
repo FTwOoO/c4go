@@ -13,6 +13,7 @@ type AvailabilityAttr struct {
 	Version       string
 	Unknown1      float64
 	Unknown2      int
+	Unknown3      int
 	IsUnavailable bool
 	Message1      string
 	Message2      string
@@ -25,14 +26,21 @@ func parseAvailabilityAttr(line string) *AvailabilityAttr {
 		`<(?P<position>.*)>
 		(?P<inherited> Inherited)?
 		 (?P<os>\w+)
-		 (?P<version>[\d.]+)
+		 (?P<version>[\d\.]+)
 		 (?P<unknown1>[\d.]+)
 		 (?P<unknown2>[\d.]+)
 		(?P<unavalable> Unavailable)?
 		 "(?P<message1>.*?)"
-		(?P<message2> ".*?")?`,
+		(?P<message2> ".*?")?
+		\s*(?P<unknown3>[\d]+)?`,
 		line,
 	)
+
+	var unkown3 int
+	unknown3str := groups["unknown3"]
+	if unknown3str != "" {
+		unkown3 = util.Atoi(unknown3str)
+	}
 
 	return &AvailabilityAttr{
 		Addr:          ParseAddress(groups["address"]),
@@ -41,6 +49,7 @@ func parseAvailabilityAttr(line string) *AvailabilityAttr {
 		Version:       groups["version"],
 		Unknown1:      atof(groups["unknown1"]),
 		Unknown2:      util.Atoi(groups["unknown2"]),
+		Unknown3:      unkown3,
 		IsUnavailable: len(groups["unavalable"]) > 0,
 		Message1:      removeQuotes(groups["message1"]),
 		Message2:      removeQuotes(groups["message2"]),

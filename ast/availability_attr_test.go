@@ -5,6 +5,7 @@ import (
 )
 
 func TestAvailabilityAttr(t *testing.T) {
+
 	nodes := map[string]Node{
 		`0x7fc5ff8e5d18 </usr/include/AvailabilityInternal.h:21697:88, col:124> os 10.10 0 0 "" ""`: &AvailabilityAttr{
 			Addr:          0x7fc5ff8e5d18,
@@ -108,6 +109,35 @@ func TestAvailabilityAttr(t *testing.T) {
 			Message1:      "",
 			Message2:      "",
 			IsInherited:   true,
+			ChildNodes:    []Node{},
+		},
+
+		`0x7f91cb8e5888 <col:142, col:178> macos 10.15 0 0 "" "" 0`: &AvailabilityAttr{
+			Addr:          0x7f91cb8e5888,
+			Pos:           NewPositionFromString("col:142, col:178"),
+			OS:            "macos",
+			Version:       "10.15",
+			Unknown1:      0,
+			Unknown2:      0,
+			IsUnavailable: false,
+			Message1:      "",
+			Message2:      "",
+			IsInherited:   false,
+			ChildNodes:    []Node{},
+		},
+
+		`0x7f91cb8ec6e8 <line:189:16, col:48> watchos 0 0 0 Unavailable "" "" 0`: &AvailabilityAttr{
+			Addr:          0x7f91cb8ec6e8,
+			Pos:           NewPositionFromString("line:189:16, col:48"),
+			OS:            "watchos",
+			Version:       "0",
+			Unknown1:      0,
+			Unknown2:      0,
+			Unknown3:      0,
+			IsUnavailable: true,
+			Message1:      "",
+			Message2:      "",
+			IsInherited:   false,
 			ChildNodes:    []Node{},
 		},
 	}
