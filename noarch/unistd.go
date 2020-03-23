@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"io"
 	"os"
+	"runtime"
 
 	"syscall"
 
@@ -11,7 +12,11 @@ import (
 )
 
 func Isatty(fd int32) int32 {
-	_, err := unix.IoctlGetTermios(int(fd), syscall.TCGETS)
+	if runtime.GOOS == "darwin" {
+		panic("Isatty is not support on macos")
+	}
+
+	_, err := unix.IoctlGetTermios(int(fd), 0x5401)
 	// TODO need test
 	if err != nil {
 		return 0
