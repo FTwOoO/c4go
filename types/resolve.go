@@ -270,7 +270,7 @@ func ResolveType(p *program.Program, s string) (resolveResult string, err error)
 	if s[len(s)-1] == '*' {
 		r := strings.TrimSpace(s[:len(s)-1])
 		r, err = ResolveType(p, r)
-		prefix := "[]"
+		prefix := "*"
 		if strings.Contains(r, "noarch.File") {
 			prefix = "*"
 		}
