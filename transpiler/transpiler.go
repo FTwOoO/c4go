@@ -146,6 +146,8 @@ func TranspileAST(fileName, packageName string, withOutsideStructs bool,
 		p.File.Decls = append([]goast.Decl{importDecl}, p.File.Decls...)
 	}
 
+	p.File.Decls = cleanImplicitTypeConversion(p.File.Decls)
+
 	// generate Go source
 	source = p.String()
 

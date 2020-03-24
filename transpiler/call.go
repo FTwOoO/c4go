@@ -401,10 +401,10 @@ func transpileCallExpr(n *ast.CallExpr, p *program.Program) (
 			if pos == 0 {
 				continue
 			}
-			if pos >= len(functionDef.ArgumentTypes) {
+			if pos >= len(functionDef.ArgumentTypes) { //遇到的...定义的函数参数，忽略
 				continue
 			}
-			if arg, ok = arg.(*ast.ImplicitCastExpr); ok {
+			if arg, ok = arg.(*ast.ImplicitCastExpr); ok { //函数参数隐式类型转换的类型设置成函数定义时声明的类型
 				arg.(*ast.ImplicitCastExpr).Type = functionDef.ArgumentTypes[pos-1]
 			}
 		}
